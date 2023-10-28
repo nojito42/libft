@@ -6,18 +6,15 @@
 /*   By: nojito <nojito@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 23:28:33 by nojito            #+#    #+#             */
-/*   Updated: 2023/10/26 00:17:36 by nojito           ###   ########.fr       */
+/*   Updated: 2023/10/27 20:11:50 by nojito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-    while (len > 0)
-    {
-        ((char *)b)[len - 1] = c;
-        len--;
-    }
-    return b;
+	while (len-- > 0)
+		((char *)b)[len] = c;
+	return (b);
 }

@@ -6,14 +6,14 @@
 /*   By: nojito <nojito@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 00:18:40 by nojito            #+#    #+#             */
-/*   Updated: 2023/10/26 00:25:07 by nojito           ###   ########.fr       */
+/*   Updated: 2023/10/27 10:59:45 by nojito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    if(n != 0)
-        ft_memset(s,0,n);     
+	if (n != 0)
+		ft_memset(s, 0, n);
 }

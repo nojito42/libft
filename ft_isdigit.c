@@ -6,11 +6,11 @@
 /*   By: nojito <nojito@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 23:02:20 by nojito            #+#    #+#             */
-/*   Updated: 2023/10/26 00:17:26 by nojito           ###   ########.fr       */
+/*   Updated: 2023/10/27 19:25:25 by nojito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    return BETWEEEN(c, '0', '9');
+	return (c >= '0' && c <= '9');
 }

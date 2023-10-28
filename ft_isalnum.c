@@ -6,13 +6,13 @@
 /*   By: nojito <nojito@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 21:18:49 by nojito            #+#    #+#             */
-/*   Updated: 2023/10/25 22:36:11 by nojito           ###   ########.fr       */
+/*   Updated: 2023/10/27 10:59:49 by nojito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    return ft_isalpha(c) || ft_isdigit(c);
+	return (ft_isalpha(c) || ft_isdigit(c));
 }

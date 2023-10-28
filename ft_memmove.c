@@ -6,30 +6,32 @@
 /*   By: nojito <nojito@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 17:52:10 by nojito            #+#    #+#             */
-/*   Updated: 2023/10/26 23:52:02 by nojito           ###   ########.fr       */
+/*   Updated: 2023/10/27 21:28:44 by nojito           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-    if (CHECK_MEMOP(dst, src, len))
-    {
-        char *s;
-        char *d;
-        size_t c;
+	size_t	i;
 
-        s = (char *)src;
-        d = (char *)dst;
-        c = 0;
-
-        if (d > s)
-            while (len-- > 0)
-                d[len] = s[len];
-        else
-            while (c++ < len)
-                d[c] = s[c];
-    }
-    return (dst);
+	if (!(dst == src || len == 0))
+	{
+		if (dst > src && dst - src < (int)len)
+			while (len-- > 0)
+				((char *)dst)[len] = ((char *)src)[len];
+		else if (src > dst && src - dst < (int)len)
+		{
+			i = 0;
+			while (i < len)
+			{
+				((char *)dst)[i] = ((char *)src)[i];
+				i++;
+			}
+		}
+		else
+			ft_memcpy(dst, src, len);
+	}
+	return (dst);
 }
