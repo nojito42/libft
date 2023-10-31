@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nojito <nojito@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jmoulin <jmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 01:02:20 by nojito            #+#    #+#             */
-/*   Updated: 2023/10/28 01:12:49 by nojito           ###   ########.fr       */
+/*   Updated: 2023/10/29 14:59:51 by jmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
