@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoulin <jmoulin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmoulin <jmoulin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/27 22:15:34 by nojito            #+#    #+#             */
-/*   Updated: 2023/10/29 14:55:53 by jmoulin          ###   ########.fr       */
+/*   Created: 2023/11/01 18:09:30 by jmoulin           #+#    #+#             */
+/*   Updated: 2023/11/01 18:09:30 by jmoulin          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		c -= 32;
+		c -= ' ';
 	return (c);
 }
