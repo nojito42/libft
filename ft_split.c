@@ -6,7 +6,7 @@
 /*   By: jmoulin <jmoulin@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:13:40 by jmoulin           #+#    #+#             */
-/*   Updated: 2023/11/01 18:13:40 by jmoulin          ###   ########.ch       */
+/*   Updated: 2023/11/01 20:38:12 by jmoulin          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,14 @@ struct		s_vars
 	size_t	j;
 };
 
-static void	*ft_free(char **strs)
+static void	*ft_free(char **s)
 {
-	while (*strs)
-		free(*strs);
-	free(strs);
+	char	**temp;
+
+	temp = s;
+	while (*s)
+		free(*s++);
+	free(temp);
 	return (NULL);
 }
 
